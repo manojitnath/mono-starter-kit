@@ -15,8 +15,8 @@ export const PersonalHeader = () => {
 	const { publication } = useAppContext();
 
 	const navbarItems = publication.preferences.navbarItems.filter(hasUrl);
-	const visibleItems = navbarItems.slice(0, 2);
-	const hiddenItems = navbarItems.slice(2);
+	const visibleItems = navbarItems.slice(0, 3);
+	const hiddenItems = navbarItems.slice(3);
 
 	const navList = (
 		<ul className="flex list-none flex-row items-center gap-4 text-xs font-semibold uppercase tracking-tight text-neutral-600 dark:text-neutral-300">
